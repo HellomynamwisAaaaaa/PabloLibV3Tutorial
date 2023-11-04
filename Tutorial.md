@@ -71,5 +71,38 @@ tab1:CreateInfo("Info")
 tab1:CreateWarning("Warning")
 ```
 
+
+
+
+# EXTRAS
+### Extra 1. Deleting an any tab element(button, slider, textbox, Toggle, label, info, warning)
+```lua
+local button = tab1:CreateButton("Print hi", function()
+print("hi")
+end)
+
+tab1:CreateButton("Delete print hi button", function()
+button:Delete()
+end)
+```
+### NOTE: THIS IS NOT ONLY WORKS ON BUTTON THIS IS WORKING ON BUTTON, TOGGLE, SLIDER, TEXTBOX, LABEL, INFO, WARNING!
+
+### Extra 2. Deleting a Tab
+```lua
+local tab1 = window:CreateTab("Tab")
+tab1:CreateButton("Destroy this tab", function()
+tab1:DeleteTab()
+end)
+```
+
+### NOTE: THIS IS WORKS ON ANY TAB!
+
+### Extra 3. Closing the Pablo Lib
+```lua
+tab1:CreateButton("Destroy Pablo Lib", function()
+PabloLib:Close()
+end)
+```
+
 Thats all for now! I hope yall like the new updates and new ui!
 Have a good day! :)
