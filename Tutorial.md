@@ -2,9 +2,7 @@
 # PabloLibV3Tutorial
 <[[UPDATE LOGS]]>
 ------------------------------
-1. added info, warning
-<>
-2. changed ui look
+2. added delete tab and 2 more things(look on extras)
 
 -------------------------
 Hello! In this tutorial I will show how to use the "Pablo Lib V3"!
