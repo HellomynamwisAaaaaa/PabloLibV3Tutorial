@@ -16,7 +16,11 @@ local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Batu
 
 ###  2. To create the lib use this code:
 ```lua
-local window = PabloLib:Create("Name")
+local window = PabloLib:Create(
+"Name", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"p" -- You can put any keybind here to open close.
+)
 ```
 
 ### 3 . To create a tab use this following code:
