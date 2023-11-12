@@ -9,12 +9,12 @@ Hello! In this tutorial I will show how to use the "Pablo Lib V3"!
 
 Let's start!
 
-### 1. To get the lib use this code:
+### 1. To create the lib use this code:
 ```lua
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 ```
 
-###  2. To create the lib use this code:
+###  2. To get the lib use this code:
 ```lua
 local window = PabloLib:Create(
 "Name", -- Name here.
