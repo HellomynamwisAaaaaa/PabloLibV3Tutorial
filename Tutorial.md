@@ -101,10 +101,31 @@ end)
 
 ### Extra 3. Closing the Pablo Lib
 ```lua
-tab1:CreateButton("Destroy Pablo Lib", function()
 PabloLib:Close()
+```
+# READY SCRIPTS
+1. Making a key system
+```lua
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local key = "PabloLibKey" -- Put your key here.
+local window = PabloLib:Create(
+"Key System",
+"Enabled"
+"p"
+)
+
+local tab1 = window:CreateTab("Key System")
+tab1:CreateWarning("Please put key to contiune.")
+tab1:CreateTextbox("Put key here:", function(a)
+if a == key then
+-- Put your code here what happens after you entered the correct key.
+window:CreateTab("TestTab")
+else
+local warning = tab1:CreateWarning("Wrong key! Please try again.") -- If the key is wrong it will creates a warning says "Wrong Key! Please try again." after 2 seconds it deletes. 
+wait(2)
+warning:Delete() 
+end
 end)
 ```
-
 Thats all for now! I hope yall like the new updates and new ui!
 Have a good day! :)
