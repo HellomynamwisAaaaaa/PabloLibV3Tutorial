@@ -104,7 +104,7 @@ end)
 PabloLib:Close()
 ```
 # READY SCRIPTS
-1. Making a key system
+### 1. Making a key system
 ```lua
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local key = "PabloLibKey" -- Put your key here.
