@@ -1,4 +1,4 @@
-# imagine i cant do dropdpwn because the scrolling frame aint sizing the dropdown container😭😭(i can do it the dropdown but i cant because of that)
+# imagine i cant do dropdown because the scrolling frame aint sizing the dropdown container😭😭(i can do it the dropdown but i cant because of that)
 # PabloLibV3Tutorial
 <[[UPDATE LOGS]]>
 ------------------------------
