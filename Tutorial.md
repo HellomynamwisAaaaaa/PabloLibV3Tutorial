@@ -1,9 +1,7 @@
-# imagine i cant do dropdown because the scrolling frame aint sizing the dropdown container😭😭(i can do it the dropdown but i cant because of that)
 # PabloLibV3Tutorial
 <[[UPDATE LOGS]]>
 ------------------------------
-2. added delete tab and 2 more things(look on extras)
-
+1. And finally... I added dropdown! Huge thanks to WhiteHat | AnyaDev to making it
 -------------------------
 Hello! In this tutorial I will show how to use the "Pablo Lib V3"!
 
@@ -73,7 +71,37 @@ tab1:CreateInfo("Info")
 tab1:CreateWarning("Warning")
 ```
 
+### 11. To create an Dropdown use this following code:
+```lua
+tab1:CreateDropdown("Dropdown", {"Option 1", "Option 2", "Option 3"}, function(selected)
+print(selected)
+end
+```
 
+### OR
+
+# Want to make it like every option has a script? Well.. Theres a way! Just use this follpwing code:
+```lua
+getgenv().selected = nil
+
+function DetectOption()
+if getgenv().selected == "Option 1" then
+print("Setting walkspeed to 100!")
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+elseif getgenv().selected == "Option 2" then
+print("Setting jumppower to 100!")
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+elseif getgenv().selected == "Option 3" then
+print("Resetting!")
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end)
+
+tab1:CreateDropdown("Dropdown", {"Option 1", "Option 2", "Option 3"}, function(selectedopt)
+getgenv.selected = selectedopt
+DetectOption()
+end
+```
 
 
 # EXTRAS
