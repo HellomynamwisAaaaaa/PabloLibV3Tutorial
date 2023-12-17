@@ -80,7 +80,7 @@ end
 
 ### OR
 
-# Want to make it like every option has a script? Well.. Theres a way! Just use this follpwing code:
+# Want to make it like every option has a script? Well.. Theres a way! Just use this following code:
 ```lua
 getgenv().selected = nil
 
